@@ -62,6 +62,10 @@
   .article .lead { font-size: 16px; color: var(--text-light); background: var(--warm-white); border-left: 3px solid var(--terracotta); border-radius: 0 12px 12px 0; padding: 18px 22px; }
   .article strong { color: var(--brown); font-weight: 500; }
   .article a { color: var(--terracotta); text-decoration: underline; text-underline-offset: 2px; }
+  .byline { max-width: 680px; margin: 0 auto 8px; padding: 0 24px; display: flex; align-items: center; gap: 12px; }
+  .byline img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--blush-light); flex-shrink: 0; }
+  .byline-name { font-family: 'DM Serif Display', serif; font-size: 16px; color: var(--brown); line-height: 1.2; }
+  .byline-meta { font-size: 12px; color: var(--text-light); font-weight: 300; }
   .article ul { margin: 0 0 14px 20px; }
   .article li { font-size: 15px; color: var(--text); font-weight: 300; line-height: 1.9; margin-bottom: 6px; }
   .article .disclaimer { font-size: 12px; color: var(--text-light); font-weight: 300; margin-top: 28px; padding-top: 16px; border-top: 1px solid rgba(232,196,184,0.3); }
@@ -99,6 +103,18 @@
     </h1>
   </div>
 </section>
+
+<!-- ── Author byline ── -->
+<div class="byline">
+  <img src="/agent-photo.jpg" alt="Shi Hao Liu, licensed Washington real estate broker at Kelly Right Real Estate" width="48" height="48" loading="lazy">
+  <div>
+    <div class="byline-name">Shi Hao Liu</div>
+    <div class="byline-meta">
+      <span class="lang-zh">华盛顿州持牌房地产经纪人 ・ Kelly Right Real Estate ・ 更新于 2026 年 6 月 15 日</span>
+      <span class="lang-en">Licensed WA Real Estate Broker ・ Kelly Right Real Estate ・ Updated June 15, 2026</span>
+    </div>
+  </div>
+</div>
 
 <!-- ── Article Body ── -->
 <article class="article">
