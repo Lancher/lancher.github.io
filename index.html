@@ -546,6 +546,7 @@
     <a class="nav-link lang-zh" href="#steps">步骤</a>
     <a class="nav-link lang-zh" href="#faq">FAQ</a>
     <a class="nav-link lang-zh" href="#contact">联系</a>
+    <a class="nav-link lang-zh" href="/blog/">博客</a>
     <a class="nav-link lang-en" href="#hero">Home</a>
     <a class="nav-link lang-en" href="#pricing">Pricing</a>
     <a class="nav-link lang-en" href="#process">Process</a>
@@ -554,6 +555,7 @@
     <a class="nav-link lang-en" href="#steps">Steps</a>
     <a class="nav-link lang-en" href="#faq">FAQ</a>
     <a class="nav-link lang-en" href="#contact">Contact</a>
+    <a class="nav-link lang-en" href="/blog/">Blog</a>
   </div>
   <button class="lang-btn" onclick="toggleLang()">
     <span class="lang-zh">EN</span>
@@ -894,7 +896,9 @@
 
 <!-- ── CTA ── -->
 <section class="cta" id="contact">
-  <div class="cta-flower">🌿</div>
+  <img src="/agent-photo.jpg" alt="Shi Hao Liu — Seattle flat fee buyer's agent at Kelly Right Real Estate" width="116" height="116" loading="lazy" style="width:116px; height:116px; border-radius:50%; object-fit:cover; border:3px solid var(--blush-light); box-shadow:0 8px 24px rgba(92,74,58,0.12); margin-bottom:14px;">
+  <div style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--brown); margin-bottom:2px;">Shi Hao Liu</div>
+  <div style="font-size:12px; color:var(--text-light); margin-bottom:18px;"><span class="lang-zh">持牌房地产经纪人 ・ Kelly Right Real Estate</span><span class="lang-en">Licensed Real Estate Broker ・ Kelly Right Real Estate</span></div>
   <h2>
     <span class="lang-zh">准备好省下佣金了吗？</span>
     <span class="lang-en">Ready to Save Thousands?</span>
@@ -931,12 +935,13 @@
 <script>
   function toggleLang() { document.body.classList.toggle('en'); }
 
-  // Smooth scroll for nav links
+  // Smooth scroll for in-page anchors; let real page links (e.g. /blog/) navigate normally
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (!href.startsWith('#')) return;
       e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const target = document.getElementById(targetId);
+      const target = document.getElementById(href.substring(1));
       if (target) {
         const navHeight = document.getElementById('navbar').offsetHeight;
         const targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
