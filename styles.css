@@ -1,17 +1,17 @@
   :root {
-    --cream: #f5f7fa;
+    --cream: #f8fafc;
     --warm-white: #ffffff;
-    --blush: #c2a14d;
-    --blush-light: #e9eef5;
-    --sage: #486584;
-    --sage-light: #e9eef5;
-    --terracotta: #143a63;
-    --gold: #c2a14d;
-    --gold-dark: #8c6f24;
-    --brown: #0f2742;
-    --brown-light: #3a5170;
-    --text: #1f2937;
-    --text-light: #5b6b80;
+    --blush: #0d9488;
+    --blush-light: #e2e8f0;
+    --sage: #475569;
+    --sage-light: #e2e8f0;
+    --terracotta: #0f766e;
+    --gold: #0d9488;
+    --gold-dark: #0f766e;
+    --brown: #0f172a;
+    --brown-light: #475569;
+    --text: #1e293b;
+    --text-light: #64748b;
     --nav-h: 56px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -68,13 +68,13 @@
     white-space: nowrap; transition: all 0.25s ease;
   }
   .nav-link:hover, .nav-link.active {
-    background: rgba(20,58,99,0.1); color: var(--terracotta);
+    background: rgba(13,148,136,0.1); color: var(--terracotta);
   }
   .lang-btn {
     font-family: 'Inter', sans-serif;
     font-size: 11px; font-weight: 500; color: var(--brown);
     background: var(--warm-white);
-    border: 1px solid rgba(194,161,77,0.16);
+    border: 1px solid rgba(13,148,136,0.12);
     border-radius: 16px; padding: 5px 12px;
     cursor: pointer; white-space: nowrap;
     transition: all 0.25s ease; flex-shrink: 0;
@@ -94,13 +94,13 @@
     content: ''; position: absolute;
     top: -120px; left: 50%; transform: translateX(-50%);
     width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(194,161,77,0.16) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(13,148,136,0.12) 0%, transparent 70%);
     pointer-events: none; z-index: 0;
   }
   .hero > * { position: relative; z-index: 1; }
   .hero-icon { font-size: 48px; margin-bottom: 20px; display: inline-block; }
   .hero h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
     font-size: clamp(32px, 6vw, 54px);
     font-weight: 400; color: var(--brown);
     line-height: 1.25; margin-bottom: 16px;
@@ -131,7 +131,7 @@
     margin-bottom: 20px;
   }
   .price-amount {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
     font-size: 56px; color: var(--gold-dark); line-height: 1; margin-bottom: 8px;
   }
   .price-amount .dollar { font-size: 28px; vertical-align: top; margin-right: 2px; }
@@ -143,7 +143,7 @@
     color: var(--gold-dark); text-align: center; margin-bottom: 8px; font-weight: 500;
   }
   .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
     font-size: clamp(24px, 4vw, 34px); font-weight: 400;
     color: var(--brown); text-align: center; margin-bottom: 40px;
   }
@@ -155,7 +155,7 @@
   }
   .service-card {
     background: var(--warm-white); border-radius: 16px; padding: 28px 24px;
-    border: 1px solid rgba(194,161,77,0.16);
+    border: 1px solid rgba(13,148,136,0.12);
     transition: transform 0.3s ease, border-color 0.3s ease; text-align: center;
   }
   .service-card:hover { transform: translateY(-3px); border-color: var(--blush); }
@@ -209,7 +209,7 @@
     display: inline-block; font-size: 11px; font-weight: 500;
     padding: 3px 10px; border-radius: 10px; white-space: nowrap;
   }
-  .badge.us { background: rgba(20,58,99,0.12); color: var(--terracotta); }
+  .badge.us { background: rgba(13,148,136,0.12); color: var(--terracotta); }
   .badge.you { background: rgba(15,23,42,0.08); color: var(--brown); }
   .badge.other { background: var(--sage-light); color: #5a7a5e; }
   .resp-summary {
@@ -245,8 +245,8 @@
     text-align: left; font-weight: 500; font-size: 14px; color: var(--brown);
   }
   .comparison-table tr:last-child td { border-bottom: none; }
-  .old-price { color: #bbb; text-decoration: line-through; font-family: 'Playfair Display', serif; }
-  .new-price { color: var(--gold-dark); font-weight: 700; font-family: 'Playfair Display', serif; font-size: 17px; }
+  .old-price { color: #bbb; text-decoration: line-through; font-family: 'Manrope', serif; }
+  .new-price { color: var(--gold-dark); font-weight: 700; font-family: 'Manrope', serif; font-size: 17px; }
   .savings {
     display: inline-block; background: var(--sage-light); color: var(--brown);
     font-size: 11px; padding: 3px 10px; border-radius: 10px; font-weight: 500;
@@ -258,7 +258,7 @@
     gap: 24px; text-align: center;
   }
   .step-num {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
     font-size: 36px; color: var(--blush); margin-bottom: 8px;
   }
   .step h3 { font-size: 15px; font-weight: 700; color: var(--brown); margin-bottom: 6px; }
@@ -287,7 +287,7 @@
   .cta { text-align: center; padding: 64px 24px 80px; }
   .cta-flower { font-size: 28px; margin-bottom: 16px; }
   .cta h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
     font-size: clamp(24px, 4vw, 34px); font-weight: 400;
     color: var(--brown); margin-bottom: 12px;
   }
@@ -302,7 +302,7 @@
   }
   .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(20,58,99,0.3); background: #0c2440;
+    box-shadow: 0 8px 24px rgba(13,148,136,0.3); background: #115e59;
   }
 
   /* ── Footer ── */
