@@ -183,9 +183,9 @@
     border-bottom: 2px solid rgba(203,213,225,0.25); white-space: nowrap;
   }
   .resp-table thead th:first-child, .resp-table thead th:nth-child(2) { text-align: left; }
-  .resp-table thead th.col-us { color: var(--terracotta); }
-  .resp-table thead th.col-you { color: var(--brown); }
-  .resp-table thead th.col-other { color: var(--sage); }
+  .resp-table thead th.col-us { color: var(--brown); }
+  .resp-table thead th.col-you { color: var(--gold-dark); }
+  .resp-table thead th.col-other { color: #475569; }
   .resp-table td {
     padding: 12px; font-size: 13px;
     border-bottom: 1px solid rgba(203,213,225,0.12);
@@ -209,9 +209,9 @@
     display: inline-block; font-size: 11px; font-weight: 500;
     padding: 3px 10px; border-radius: 10px; white-space: nowrap;
   }
-  .badge.us { background: rgba(20,58,99,0.12); color: var(--terracotta); }
-  .badge.you { background: rgba(15,23,42,0.08); color: var(--brown); }
-  .badge.other { background: var(--sage-light); color: #5a7a5e; }
+  .badge.us { background: rgba(15,39,66,0.12); color: var(--brown); }
+  .badge.you { background: rgba(194,161,77,0.22); color: var(--gold-dark); }
+  .badge.other { background: #e2e8f0; color: #475569; }
   .resp-summary {
     display: flex; flex-direction: column; gap: 12px; margin-top: 24px; padding: 24px;
     background: var(--warm-white); border-radius: 12px;
