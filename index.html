@@ -433,6 +433,34 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(20,58,99,0.3); background: #0c2440;
   }
+  .contact-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    max-width: 860px; margin: 8px auto 0;
+  }
+  .contact-card {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: #fff; border: 1px solid var(--blush-light); border-radius: 18px;
+    padding: 30px 22px 26px; color: var(--brown); text-decoration: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  a.contact-card:hover {
+    border-color: var(--terracotta); transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(20,58,99,0.10);
+  }
+  .contact-icon {
+    width: 46px; height: 46px; border-radius: 50%; margin-bottom: 16px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--cream); color: var(--terracotta);
+  }
+  .contact-title { font-family: 'Playfair Display', serif; font-size: 19px; margin-bottom: 8px; }
+  .contact-desc { font-size: 13px; line-height: 1.6; color: var(--text-light); font-weight: 300; margin-bottom: 18px; }
+  .contact-action {
+    margin-top: auto; min-height: 20px; display: flex; align-items: center;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.3px; color: var(--terracotta);
+  }
+  @media (max-width: 720px) {
+    .contact-cards { grid-template-columns: 1fr; max-width: 360px; }
+  }
 
   /* ── Footer ── */
   footer {
@@ -771,14 +799,25 @@
 
 <span>Contact us and start your smart home-buying journey</span>
 </p>
-<a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc24Cs968JfYyqCuGCNzvXnrrlZbjIi1pIujivVKxoBEvmjfA/viewform?usp=publish-editor" rel="noopener noreferrer" target="_blank">
-
-<span>Get Started</span>
+<div class="contact-cards">
+<a class="contact-card" href="https://docs.google.com/forms/d/e/1FAIpQLSc24Cs968JfYyqCuGCNzvXnrrlZbjIi1pIujivVKxoBEvmjfA/viewform?usp=publish-editor" rel="noopener noreferrer" target="_blank">
+<span class="contact-icon" aria-hidden="true"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24" width="20"><rect height="18" rx="2" width="14" x="5" y="3"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>
+<span class="contact-title">Free Consultation</span>
+<span class="contact-desc">Fill out a short form and I'll get back to you.</span>
+<span class="contact-action">Get Started &rarr;</span>
 </a>
-<div style="margin-top:28px; font-size:14px; color:var(--text-light); line-height:2;">
-<div>Or text me:</div>
-<img alt="Shi Hao's mobile number" height="22" loading="lazy" src="/text-number.png" style="height:22px; width:auto; vertical-align:middle;" width="155"/>
-<div style="margin-top:6px;">or email <a href="mailto:shihaoliu@kellyright.com" style="color:var(--terracotta); text-decoration:none; font-weight:500;">shihaoliu@kellyright.com</a></div>
+<div class="contact-card">
+<span class="contact-icon" aria-hidden="true"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24" width="20"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+<span class="contact-title">Text Me</span>
+<span class="contact-desc">Quick question? Send me a text anytime.</span>
+<span class="contact-action"><img alt="Shi Hao's mobile number" height="12" loading="lazy" src="/text-number.png" style="height:12px; width:auto; display:block;" width="139"/></span>
+</div>
+<a class="contact-card" href="mailto:shihaoliu@kellyright.com">
+<span class="contact-icon" aria-hidden="true"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24" width="20"><rect height="14" rx="2" width="18" x="3" y="5"/><path d="m3 7 9 6 9-6"/></svg></span>
+<span class="contact-title">Email Me</span>
+<span class="contact-desc">Prefer email? Write to me anytime.</span>
+<span class="contact-action">shihaoliu@kellyright.com</span>
+</a>
 </div>
 </section>
 <footer>
