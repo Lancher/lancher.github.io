@@ -2,31 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fairfeebuyer.com/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://fairfeebuyer.com/zh-tw/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fairfeebuyer.com/zh-cn/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://fairfeebuyer.com/redmond-flat-fee-buyer-agent.html</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/bellevue-flat-fee-buyer-agent.html</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/kirkland-flat-fee-buyer-agent.html</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -140,13 +152,13 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/title-insurance-washington-home-buyers.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/property-taxes-washington-home-buyers.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -188,13 +200,13 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/buyer-agent-commission-rebate-washington.html</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/contingent-vs-pending-washington-home-buyers.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -218,7 +230,7 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/rate-buydowns-seller-credits-washington-buyers.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -248,7 +260,7 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/mercer-island-wa-home-buyer-guide.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -266,7 +278,7 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/hoa-condo-documents-washington-buyers.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -284,19 +296,19 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/buyer-brokerage-agreement-washington.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/home-inspection-contingency-washington.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/appraisal-gap-washington-home-buyers.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -308,31 +320,31 @@
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/closing-costs-washington-home-buyers.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/how-to-win-bidding-war-seattle-eastside.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/first-time-home-buyer-king-county-eastside.html</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/flat-fee-vs-traditional-buyer-agent-washington.html</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fairfeebuyer.com/blog/who-pays-buyers-agent-washington.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

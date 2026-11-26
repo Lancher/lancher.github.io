@@ -5,8 +5,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<title>Blog — Seattle &amp; Eastside Flat Fee Home Buying Guides</title>
-<meta content="Home-buying guides, tips, and answers for Seattle &amp; Eastside buyers — flat fee real estate, buyer's agent commissions in Washington, offers, and closing. By licensed broker Shi Hao Liu, Kelly Right Real Estate." name="description"/>
+<link href="/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/logo.png" rel="apple-touch-icon"/>
+<title>Seattle &amp; Eastside Home-Buying Guides (2026)</title>
+<meta content="50+ Washington home-buying guides on flat-fee buyer agents, commissions, NWMLS offers, closing costs &amp; Eastside cities. By licensed WA broker." name="description"/>
 <meta content="Shi Hao Liu - Kelly Right Real Estate" name="author"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://fairfeebuyer.com/blog/" rel="canonical"/>
@@ -17,23 +20,79 @@
 <meta content="https://fairfeebuyer.com/og-image.jpg" property="og:image"/>
 <meta content="en_US" property="og:locale"/>
 
-<meta content="Shi Hao Liu | Kelly Right Real Estate" property="og:site_name"/>
+<meta content="Fair Fee Buyer" property="og:site_name"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css" rel="stylesheet"/>
 <style>
   .post-list { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  .blog-hub-bar {
+    max-width: 680px; margin: 0 auto 22px; background: var(--warm-white);
+    border: 1px solid rgba(194,161,77,0.2); border-radius: 14px; padding: 16px 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: var(--text-light);
+  }
+  .blog-hub-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .blog-hub-links a { color: var(--terracotta); font-weight: 500; text-decoration: none; }
+  .blog-hub-links a:hover { text-decoration: underline; }
+  .filter-bar {
+    max-width: 680px; margin: 0 auto 22px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+  }
+  .filter-btn {
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500;
+    padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(20,58,99,0.2);
+    background: var(--warm-white); color: var(--brown); cursor: pointer; transition: all 0.2s ease;
+  }
+  .filter-btn.active, .filter-btn:hover { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
   .post-card {
     display: block; text-decoration: none; background: var(--warm-white);
     border: 1px solid rgba(194,161,77,0.16); border-radius: 16px; padding: 28px 28px;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   }
+  .post-card.hidden { display: none; }
   .post-card:hover { transform: translateY(-3px); border-color: var(--blush); box-shadow: 0 12px 32px rgba(15,23,42,0.08); }
   .post-meta { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px; font-weight: 500; }
-  .post-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--brown); margin-bottom: 10px; line-height: 1.35; }
+  .post-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; color: var(--brown); margin-bottom: 10px; line-height: 1.35; }
   .post-excerpt { font-size: 14px; color: var(--text-light); font-weight: 300; line-height: 1.8; }
   .post-more { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 500; color: var(--terracotta); }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://fairfeebuyer.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://fairfeebuyer.com/blog/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Seattle & Eastside Home-Buying Guides",
+  "description": "50+ Washington home-buying guides on flat-fee buyer agents, commissions, NWMLS offers, closing costs & Eastside cities.",
+  "url": "https://fairfeebuyer.com/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fair Fee Buyer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fairfeebuyer.com/logo.png"
+    }
+  }
+}
+</script>
 </head>
 <body class="en">
 <!-- ── Sticky Nav ── -->
@@ -72,517 +131,532 @@
 <!-- ── Article List ── -->
 <section id="articles" style="padding-top:8px;">
 <div class="container">
-<div class="post-list">
-<a class="post-card" href="/blog/dual-agency-washington-home-buyers.html">
-<div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
-<span>Dual Agency in Washington: What Home Buyers Need to Know</span>
+<div class="blog-hub-bar">
+<span><strong style="color:var(--brown);">$2,999 Flat Fee Buyer's Agent</strong> — Service Areas:</span>
+<div class="blog-hub-links">
+<a href="/">Seattle &amp; King County</a>
+<a href="/bellevue-flat-fee-buyer-agent.html">Bellevue</a>
+<a href="/redmond-flat-fee-buyer-agent.html">Redmond</a>
+<a href="/kirkland-flat-fee-buyer-agent.html">Kirkland</a>
 </div>
+</div>
+<div class="filter-bar" role="group" aria-label="Filter buyer guides">
+<button class="filter-btn active" data-filter="all" type="button">All Guides</button>
+<button class="filter-btn" data-filter="city" type="button">Eastside City Guides</button>
+<button class="filter-btn" data-filter="commission" type="button">Commissions &amp; Offers</button>
+<button class="filter-btn" data-filter="financing" type="button">Financing, Tax &amp; Inspections</button>
+</div>
+<div class="post-list">
+<a class="post-card" data-cat="commission" href="/blog/dual-agency-washington-home-buyers.html">
+<div class="post-meta">Buyer Guide ・ 2026</div>
+<h2 class="post-title">
+<span>Dual Agency in Washington: What Home Buyers Need to Know</span>
+</h2>
 <div class="post-excerpt">
 <span>Washington allows "limited dual agency" when one broker, or two agents at the same firm, represent both sides of a sale. What it means for your leverage, your written consent rights, and when to insist on your own agent.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/eastside-king-county-housing-market-update-november-2026.html">
+<a class="post-card" data-cat="city" href="/blog/eastside-king-county-housing-market-update-november-2026.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Eastside &amp; King County Housing Market Update: November 2026</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>October 2026 NWMLS data, Q2 2026 Eastside-specific figures, and current mortgage rates — what rising inventory and softer prices mean for buyers right now.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/fha-loan-king-county-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/fha-loan-king-county-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>FHA Loans in King County, WA: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>The 3.5% down payment and 580 credit score line, the $1,063,750 2026 loan limit, upfront &amp; annual mortgage insurance costs, and FHA's extra condo approval rules.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/closing-day-timeline-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/closing-day-timeline-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>What Happens at Closing in Washington: A Buyer's Timeline</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Escrow signing, why Washington is a "dry-funding" state, how county recording actually works, the final walkthrough, and exactly when you get your keys.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/waterfront-property-lake-washington-sammamish-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/waterfront-property-lake-washington-sammamish-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying Waterfront Property on Lake Washington or Lake Sammamish</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Who actually owns the lakebed under Washington law, the layered permit process for docks and bulkheads (WDFW, Army Corps, local shoreline rules), setbacks that vary by city, and financing & inspection considerations unique to lakefront homes.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/va-loan-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/va-loan-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>VA Loans in Washington: What Veteran Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Zero down payment, no monthly mortgage insurance, the 2026 funding fee, no VA loan limit in King County for full entitlement, and what VA appraisal requirements mean for older Eastside homes.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/medina-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/medina-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Medina, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>One of the smallest, most private cities on the Eastside — a single ZIP code, one school district, the Shoreline Master Program, and why its headline price swings by millions from month to month.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/maple-valley-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/maple-valley-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Maple Valley, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>The top-rated Tahoma School District, Lake Wilderness, Cedar River flood risk in low-lying areas, septic &amp; well in outlying unincorporated areas, and 2026 home prices — what to know about this affordable South King County alternative to the Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/earthquake-insurance-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/earthquake-insurance-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Earthquake Insurance in Washington: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Standard WA homeowners policies exclude earthquake damage. How coverage actually works, why the deductible is a percentage of your dwelling limit (not a flat fee), whether your lender can require it, and how real the Cascadia and Seattle Fault risk is on the Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/adu-accessory-dwelling-units-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/adu-accessory-dwelling-units-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Accessory Dwelling Units (ADUs): What Washington Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>A 2023 state law now requires nearly every Washington city — including every Eastside city — to allow up to two ADUs on most single-family lots. What that means for rental income, financing, HOA rules, and buying a home that already has one.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/snoqualmie-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/snoqualmie-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Snoqualmie, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>A Jack Nicklaus golf community on Snoqualmie Ridge, a top-rated school district, river flood risk, and 2026 prices — what to know about this far-east I-90 corridor city.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/jumbo-loan-king-county-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/jumbo-loan-king-county-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Jumbo Loans in King County, WA: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>King County's 2026 conforming loan limit is $1,063,750 — above most of Washington, but below many Eastside home prices. When you need a jumbo loan, how FHA &amp; VA compare, and how qualifying differs.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/shoreline-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/shoreline-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Shoreline, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Two new light rail stations on the 1 Line, a school district split in two by I-5, and 2026 prices across Richmond Beach, Ridgecrest, North City &amp; more.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/form-17-seller-disclosure-washington-home-buyers.html">
+<a class="post-card" data-cat="commission" href="/blog/form-17-seller-disclosure-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Form 17 Seller Disclosure in Washington: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What Washington's Form 17 seller disclosure actually covers, when sellers must deliver it, your 3-day rescission right, and why the environmental section can't be waived.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/kirkland-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/kirkland-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Kirkland, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Google's Eastside campus, a waterfront downtown with no light rail station yet, one top school district, and 2026 prices across Moss Bay, Juanita, Finn Hill &amp; more.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/bellevue-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/bellevue-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Bellevue, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Amazon and T-Mobile's hometown, six new light rail stations across Lake Washington, one main school district, and 2026 prices across Downtown, BelRed, Somerset &amp; more.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/redmond-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/redmond-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Redmond, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Microsoft and Nintendo of America's hometown, a new light rail line to Downtown Redmond, one top school district, and 2026 prices across Education Hill, Overlake &amp; more.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/flood-zone-insurance-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/flood-zone-insurance-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Flood Zones &amp; Flood Insurance: What Washington Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Does your Eastside or King County home sit in a flood zone? How FEMA flood maps work, when lenders legally require flood insurance, NFIP coverage limits, and what Form 17 discloses.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/title-insurance-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/title-insurance-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Title Insurance in Washington: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What title insurance actually covers, the difference between an owner's and lender's policy, who customarily pays in King County, and what it costs on an Eastside home purchase.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/property-taxes-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/property-taxes-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Property Taxes in Washington: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>How King County sets your assessed value, why the state's "1% cap" doesn't cap your actual bill, when property tax is due, how proration works at closing, and the senior/disabled exemption.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/eastside-school-districts-home-prices.html">
+<a class="post-card" data-cat="city" href="/blog/eastside-school-districts-home-prices.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Eastside School Districts &amp; Home Prices: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Which school district serves Redmond, Bellevue, Kirkland, Sammamish &amp; more, where boundaries split a single city, and how 2026 home prices stack up across each district.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/escalation-clause-washington-home-buyers.html">
+<a class="post-card" data-cat="commission" href="/blog/escalation-clause-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Escalation Clauses in Washington: How They Work for Home Buyers</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>How an escalation clause raises your offer above competing bids, NWMLS Form 35E, a real math example, the risks of revealing your ceiling, and when it's worth using today.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/newcastle-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/newcastle-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Newcastle, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Three public school districts inside one small city, a 350-acre golf club with two championship courses, and a coal-mining past — what sets Newcastle apart on the Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/common-home-inspection-findings-pacific-northwest-homes.html">
+<a class="post-card" data-cat="financing" href="/blog/common-home-inspection-findings-pacific-northwest-homes.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Common Home Inspection Findings in Pacific Northwest Homes</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Crawlspace moisture, moss-covered roofs, knob-and-tube wiring, polybutylene pipe, and heating oil tanks — the findings that show up again and again on Seattle &amp; Eastside inspections, and what each means for your offer.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/septic-well-inspection-king-county-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/septic-well-inspection-king-county-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home on Septic or Well in King County, WA</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>King County's property-transfer septic inspection rule, well water testing, the OSSM notice, and the NWMLS addenda that come with a septic-or-well purchase.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/real-estate-excise-tax-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/real-estate-excise-tax-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Real Estate Excise Tax in Washington: What Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Does the buyer pay real estate excise tax in Washington? Here's how REET's graduated 2026 state rates, King County's local 0.5% add-on, and seller liability actually work.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/buyer-agent-commission-rebate-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/buyer-agent-commission-rebate-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buyer Agent Commission Rebates in Washington, Explained</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Are commission rebates legal in Washington? Yes — here's how they're paid at closing, lender IPC limits, IRS tax treatment, and how they compare to a flat fee.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/contingent-vs-pending-washington-home-buyers.html">
+<a class="post-card" data-cat="commission" href="/blog/contingent-vs-pending-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Contingent vs. Pending in Washington: Can You Still Make an Offer?</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What "Contingent" and "Pending" mean on a Redfin, Zillow, or NWMLS listing, when a backup offer is worth writing, and NWMLS's new 2026 "First Look" pre-marketing status.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/condo-vs-townhouse-washington-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/condo-vs-townhouse-washington-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Condo vs. Townhouse in Washington: Which Should You Buy?</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What you actually own, how HOA dues and reserves differ, why FHA/VA financing adds an extra step for condos, and 2026 Eastside price data to compare the two.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/kenmore-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/kenmore-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Kenmore, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Lake Washington waterfront, Kenmore Air's seaplane base, one top school district shared with Bothell &amp; Woodinville, and a downtown rebuilt from scratch — what sets Kenmore apart.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/sewer-scope-inspection-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/sewer-scope-inspection-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Sewer Scope Inspections: What Washington Home Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What a sewer scope checks, what it costs, why Eastside &amp; Seattle homes with old clay or Orangeburg pipe fail, and how to order one under Washington's Form 35 inspection contingency.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/rate-buydowns-seller-credits-washington-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/rate-buydowns-seller-credits-washington-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Rate Buydowns &amp; Seller Credits: How Washington Buyers Lower Their Payment</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Temporary vs. permanent buydowns, FHA/VA/conventional seller-contribution limits, and how to negotiate a credit into your offer in today's more balanced Eastside market.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/mortgage-pre-approval-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/mortgage-pre-approval-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Mortgage Pre-Approval: What Washington Buyers Need to Know</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Pre-qualified vs. pre-approved, the documents lenders want, how a hard credit pull really affects your score, and how long a pre-approval letter actually lasts.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/bothell-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/bothell-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Bothell, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>A city split between two counties, one top school district shared with Woodinville and Kenmore, and a biotech hub anchored by the former Seagen campus — what sets Bothell apart on the north Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/renton-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/renton-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Renton, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Boeing's 737 plant, a Redfin median under $670K, and the most affordable city near the Eastside job corridor — neighborhoods, schools, and what sets Renton apart.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/woodinville-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/woodinville-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Woodinville, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Wine country, one top school district, and a $1.2M+ median price — what sets Woodinville apart, from Chateau Ste. Michelle's new local owners to the shortest commute to Redmond on the north Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/mercer-island-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/mercer-island-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home on Mercer Island, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>A new light rail station, one school district for the whole island, and a $2M+ median price — what sets Mercer Island apart from the rest of the Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/issaquah-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/issaquah-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Issaquah, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Schools, neighborhoods from Issaquah Highlands to Talus, 2026 prices, Costco's hometown, and why Issaquah's downtown and I-90 access set it apart from Sammamish.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/sammamish-wa-home-buyer-guide.html">
+<a class="post-card" data-cat="city" href="/blog/sammamish-wa-home-buyer-guide.html">
 <div class="post-meta">City Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Buying a Home in Sammamish, WA: A 2026 Buyer's Guide</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>School district boundaries, neighborhoods from Klahanie to Sahalee, 2026 prices, and why so many Sammamish homes come with an HOA.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/hoa-condo-documents-washington-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/hoa-condo-documents-washington-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>HOA &amp; Condo Documents in Washington: What to Review Before You Buy</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>The resale certificate, the $275 fee cap, your 5-day right to cancel, and the 2026 law changes affecting every Eastside condo or HOA buyer.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/relocating-eastside-tech-job.html">
+<a class="post-card" data-cat="city" href="/blog/relocating-eastside-tech-job.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Relocating to the Seattle Eastside for a Tech Job</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Moving for Microsoft, Amazon, or Google? Where tech workers buy in Bellevue, Redmond &amp; Kirkland, how to budget, time your purchase, and keep thousands on your agent.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/new-construction-buyer-agent-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/new-construction-buyer-agent-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>New Construction: Do You Need a Buyer's Agent?</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>The builder's agent works for the builder — not you. Why your own buyer's agent matters on a new-construction home, and how to keep the cost low.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/buyer-brokerage-agreement-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/buyer-brokerage-agreement-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>The Buyer Brokerage Agreement in Washington, Explained</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>What Washington's required buyer agreement (RCW 18.86) means — the 60-day term, exclusive vs. non-exclusive, the fee, and what to check before you sign.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/home-inspection-contingency-washington.html">
+<a class="post-card" data-cat="financing" href="/blog/home-inspection-contingency-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>The Home Inspection in Washington: Should You Waive It?</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Waiving inspection can win a competitive Eastside offer — and it's the riskiest thing a buyer can do. How the contingency works, pre-inspections, and safer middle paths.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/appraisal-gap-washington-home-buyers.html">
+<a class="post-card" data-cat="commission" href="/blog/appraisal-gap-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>The Appraisal Gap in Washington: When a Home Appraises Low</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Your Eastside offer won — then the appraisal came in under contract price. What an appraisal gap means, your four options, appraisal contingencies, and gap coverage.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/earnest-money-deposit-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/earnest-money-deposit-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Earnest Money in Washington: How Much &amp; Is It Refundable?</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>How much earnest money Washington buyers put down, where the deposit is held, and exactly when you get it back — or lose it — plus how to protect it on the Eastside.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/closing-costs-washington-home-buyers.html">
+<a class="post-card" data-cat="financing" href="/blog/closing-costs-washington-home-buyers.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>Closing Costs in Washington: What Home Buyers Actually Pay</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Escrow, title, lender fees, prepaids, and earnest money — a clear breakdown of buyer closing costs in Washington, how much to budget, and ways to save.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/how-to-win-bidding-war-seattle-eastside.html">
+<a class="post-card" data-cat="commission" href="/blog/how-to-win-bidding-war-seattle-eastside.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 <span>How to Win a Bidding War in Seattle &amp; the Eastside</span>
-</div>
+</h2>
 <div class="post-excerpt">
 <span>Well-priced Eastside homes draw multiple offers fast. Here's how to win with escalation clauses, smart contingencies, earnest money, and terms — without overpaying.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/first-time-home-buyer-king-county-eastside.html">
+<a class="post-card" data-cat="financing" href="/blog/first-time-home-buyer-king-county-eastside.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 
 <span>First-Time Home Buyer Guide: King County &amp; the Eastside (2026)</span>
-</div>
+</h2>
 <div class="post-excerpt">
 
 <span>From budgeting and pre-approval to WA down payment help, offers, and closing — a step-by-step guide for first-time buyers, plus how a flat fee saves you thousands.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/flat-fee-vs-traditional-buyer-agent-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/flat-fee-vs-traditional-buyer-agent-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 
 <span>Flat Fee vs. Traditional Buyer's Agent in Washington: What You'll Actually Pay</span>
-</div>
+</h2>
 <div class="post-excerpt">
 
 <span>A side-by-side look at flat-fee vs. a traditional 2.5% buyer's agent — what each includes, what you'll actually pay, and how much you save on a typical Eastside home.</span>
 </div>
 <span class="post-more"><span>Read more →</span></span>
 </a>
-<a class="post-card" href="/blog/who-pays-buyers-agent-washington.html">
+<a class="post-card" data-cat="commission" href="/blog/who-pays-buyers-agent-washington.html">
 <div class="post-meta">Buyer Guide ・ 2026</div>
-<div class="post-title">
+<h2 class="post-title">
 
 <span>Who Pays the Buyer's Agent in Washington State? (2026 Guide)</span>
-</div>
+</h2>
 <div class="post-excerpt">
 
 <span>The rules changed after the 2024 NAR settlement. Here's who actually pays buyer-agent commission, what a Buyer Brokerage Agreement is, and why flat-fee representation is on the rise.</span>
@@ -598,11 +672,17 @@
 <a href="https://kellyright.com/agent/shi.hao.liu/" style="color:var(--terracotta); text-decoration:none;" target="_blank">Kelly Right Real Estate</a> ・ WA License #26003789
   </div>
 <div style="margin-bottom:8px;">
+<a href="tel:+16025546539" style="color:var(--text-light); text-decoration:none;">📞 (602) 554-6539</a> ・
 <a href="mailto:shihaoliu@kellyright.com" style="color:var(--text-light); text-decoration:none;">✉️ shihaoliu@kellyright.com</a>
+</div>
+<div style="margin-bottom:8px; font-size:12px;">
+<a href="https://www.google.com/search?q=Shi+Hao+Liu/Flat+Fee+Agent+-+Kelly+Right+Real+Estate&amp;stick=H4sIAAAAAAAA_-NgU1I1qLBIS0kyTzU0MzWxTDIwMzO3MqgwtkgxszAxTDJKS0kxN0s0XMRqEpyRqeCRmK_gk1mq75aTWKLglpqq4JiemleioKvgnZqTU6kQlJmeUaIQlJqYo-BaXJJYkgoAo4_el2AAAAA&amp;hl=en" rel="noopener noreferrer" style="color:var(--terracotta); text-decoration:none;" target="_blank">Google Business Profile</a> ・
+<a href="https://www.zillow.com/profile/sliu225" rel="noopener noreferrer" style="color:var(--terracotta); text-decoration:none;" target="_blank">Zillow</a> ・
+<a href="https://www.yelp.com/biz/shi-hao-liu-kelly-right-real-estate-redmond-2" rel="noopener noreferrer" style="color:var(--terracotta); text-decoration:none;" target="_blank">Yelp</a>
 </div>
 <div style="font-size:11px; color:#a09a90;">
 
-<span>Serving: Seattle ・ Bellevue ・ Redmond ・ Issaquah</span><br/>
+<span>Serving: Seattle ・ Bellevue ・ Redmond ・ Kirkland ・ Issaquah</span><br/>
     © 2026 Kelly Right International, Inc. All Rights Reserved
   </div>
 </footer>
@@ -610,6 +690,17 @@
   function toggleLang() { document.body.classList.toggle('en'); }
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 10); });
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.post-card').forEach(card => {
+        card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+      });
+    });
+  });
 </script>
 </body>
 </html>
